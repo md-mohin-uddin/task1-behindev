@@ -1,0 +1,94 @@
+nav .relative:hover .hidden {
+    display: block;
+  }
+  /* Apply font family and weight to both paragraphs and headings */
+body {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+  }
+  
+.vertical-line {
+    border-left: 1px solid #c32626; /* Or any other color */
+    height: 100px; /* Adjust the height as needed */
+}
+.ranked-para{
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(78, 93, 120);
+    font-size: 18px;
+    line-height: 25px;
+}
+.ranked-p {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(138, 148, 166);
+    font-size: 14px;
+    line-height: 25px;
+}
+.ranked-heading {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(10, 31, 68);
+    font-size: 38px;
+    line-height: 42px;
+}
+/* Apply font color and size to paragraphs */
+.pool{
+    height: 300px;
+}
+.poll-p{
+    color:white;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+/* Apply font color, size, and line height to headings */
+.poll-h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 700;
+}
+footer{
+    height: 400px;
+}
+footer p{
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(10, 31, 68);
+    font-size: 15px;
+    line-height: 20px;
+}
