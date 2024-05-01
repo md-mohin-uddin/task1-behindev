@@ -95,6 +95,24 @@ body {
   line-height: 20px;
   color: rgb(51, 51, 51);
 }
+.features{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-bottom: 20px;
+}
+.items{
+  border: 1px solid transparent;
+  margin: 5px;
+  padding: 5px;
+  transition: box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+.items img{
+  display: inline;
+}
+.items:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Increase shadow effect on hover */
+}
 .slider-container {
     width: 100%;
     overflow: hidden;
