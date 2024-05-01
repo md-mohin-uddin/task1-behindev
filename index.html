@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/fc71634d2f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/fc71634d2f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="container mx-auto justify-evenly items-center">
-      <header>
+    <div class="container-header">
+      <header class="">
         <nav
-          class="flex flex-col md:flex-row justify-between items-center py-4"
+          class="flex sm:flex-col md:flex-row justify-between items-center py-4"
         >
           <div class="mb-4 md:mb-0">
             <img
               class="w-64 mx-auto md:mx-0"
-              src="./5edaca1d81168bf10d8a6864_rankedvote_logo.svg"
+              src="./RankedVote_ Online Ranked-Choice Voting Polls_files/5edaca1d81168bf10d8a6864_rankedvote_logo.svg"
               alt=""
             />
           </div>
-          <div class="flex justify-center md:justify-evenly">
+          <div class="flex justify-center md:justify-end md:items-center">
             <div class="relative">
-              <button class="px-4 py-2 focus:outline-none">Solutions <i class="fa-solid fa-angle-down"></i></button>
+              <button
+                class="px-4 py-2 focus:outline-none text-blue-900 font-semibold text-sm leading-5 font-cabin"
+              >
+                Solutions <i class="fa-solid fa-angle-down"></i>
+              </button>
               <div class="absolute bg-white mt-2 p-2 rounded shadow-md hidden">
                 <a href="#" class="block px-4 py-2">Run Contests</a>
                 <a href="#" class="block px-4 py-2">Make Decisions</a>
@@ -32,21 +39,82 @@
                 <a href="#" class="block px-4 py-2">Bulk Programs</a>
               </div>
             </div>
-            <a href="#" class="px-4 py-2">Demo</a>
-            <a href="#" class="px-4 py-2">Stories</a>
-            <a href="#" class="px-4 py-2">Guides</a>
-            <a href="#" class="px-4 py-2">Pricing</a>
-            <a href="#" class="px-4 py-2">Log In</a>
-            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg ml-4">Sign Up</a> <!-- Added Sign Up button -->
-      </div>
+            <a
+              href="#"
+              class="inline-block px-4 py-2 text-blue-900 font-semibold text-sm leading-5 font-cabin"
+              >Demo</a
+            >
+            <a
+              href="#"
+              class="inline-block px-4 py-2 text-blue-900 font-semibold text-sm leading-5 font-cabin"
+              >Stories</a
+            >
+            <a
+              href="#"
+              class="inline-block px-4 py-2 text-blue-900 font-semibold text-sm leading-5 font-cabin"
+              >Guides</a
+            >
+            <a
+              href="#"
+              class="inline-block px-4 py-2 text-blue-900 font-semibold text-sm leading-5 font-cabin"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="inline-block px-4 py-2 text-blue-900 font-semibold text-sm leading-5 font-cabin"
+              >Log In</a
+            >
+            <a href="#" class="button text-white bg-indigo-600">SIGN UP</a>
           </div>
         </nav>
       </header>
     </div>
 
     <main>
-        <!-- slider  -->
-        <!-- <div class="slider-container">
+      <!-- hero -->
+      <!-- <div class="hero">
+        <h1>hero</h1>
+      </div> -->
+      <!-- clients -->
+      <div class="clients flex">
+        <img
+          class=""
+          src="./RankedVote_ Online Ranked-Choice Voting Polls_files/65327213500e83c79137c8f3_Adobe_Corporate_logo.svg.png"
+          alt=""
+        />
+        <img
+          src="./RankedVote_ Online Ranked-Choice Voting Polls_files/62839f54abd622565aaa9a60_Studio_Wildcard_logo.png"
+          alt=""
+        />
+        <img
+          src="./RankedVote_ Online Ranked-Choice Voting Polls_files/653272ef82fc6cc93feecdca_target-logo.png"
+          alt=""
+        />
+        <img
+          src="./RankedVote_ Online Ranked-Choice Voting Polls_files/653273d916c87698a51c53fb_Grafana_logo.svg.png"
+          alt=""
+        />
+        <img
+          src="./RankedVote_ Online Ranked-Choice Voting Polls_files/6532743e7d7e6d9f4fcf0248_Spotify_Logo_CMYK_Green-p-500.png"
+          alt=""
+        />
+      </div>
+      <!-- demos -->
+      <div class="demos">
+        <div class="demos-content bg-ivory-50">
+          <h1>
+            See live demos of ranked-choice elections, contests, and polls using
+            RankedVote!
+          </h1>
+          <a
+            class="button bg-white hover:bg-yellow-600 text-yellow-600 hover:text-white font-bold border-gray"
+            href=""
+            >VIEW DEMOS</a
+          >
+        </div>
+      </div>
+      <!-- slider  -->
+      <!-- <div class="slider-container">
             <div class="slides">
               <div class="slide">
                 <h1>"If your organization has any interest in RCV education, be sure to include RankedVote in your toolkit."</h1>
@@ -64,61 +132,89 @@
               </div>
             </div>
           </div> -->
-          
-        <!-- ranked choice -->
-        <div class="container mx-auto text-center">
-            <p class="ranked-p">WHY RANKED CHOICE VOTING WORKS</p>
-            <h1 class="ranked-heading ">Better decisions, faster.</h1>
-            <div class="flex justify-center items-center mt-2 "> <!-- Center content horizontally and vertically -->
-                <!-- First Part -->
-                <div class="w-1/2 text-justify m-3 pl-10">   
-                    <div class="w-3/4">
-                        <p class="ranked-para">Any time you're making a decision with more than two choices, ranked choice voting is the right tool for the job. It uncovers your audience's preferences with greater accuracy and fidelity than traditional voting methods. <span class="underline text-blue-500"> Create a poll</span> to see how.</p>
-                        <p class="ranked-p">KEY ADVANTAGES OF RANKED CHOICE VOTING</p>
-                        <i class="fa-solid fa-check text-green-500"></i> <a class="ranked-para" href="">Determines the choices with the strongest support</a><br>
-                        <i class="fa-solid fa-check text-green-500"></i> <a class="ranked-para" href="">Eliminates the need for multiple decision rounds</a><br>
-                        <i class="fa-solid fa-check text-green-500"></i> <a class="ranked-para" href="">Reduces vote gaming</a>
-                    </div>
-                </div>
-                <!-- Second Part -->
-                <div class="w-1/2">
-                    <img src="./RankedVote_ Online Ranked-Choice Voting Polls_files/6222880f64c1fb5616d6ea30_results-final-round.svg" alt="">
-                </div>
-            </div>
+
+      <!-- ranked choice -->
+      <div class="container-header mx-auto text-center">
+        <div>
+          <p class="ranked-p">WHY RANKED CHOICE VOTING WORKS</p>
+          <h1 class="ranked-heading">Better decisions, faster.</h1>
+          <div class="vertical-line"></div>
         </div>
-        
-        
-        
-        <!-- poll section -->
-        <div class="pool flex justify-evenly items-center py-10 bg-purple-700 h-100"> <!-- Added justify-between and items-center classes -->
-            <div>
-                <p class="poll-p">GET STARTED IN MINUTES...</p>
-                <h1 class="poll-h1">Poll your voters now</h1>
+        <div
+          class="flex md:flex-row sm:flex-col justify-center items-center mt-2"
+        >
+          <!-- Center content horizontally and vertically -->
+          <!-- First Part -->
+          <div class="w-1/2 text-justify m-3 pl-10">
+            <div class="sm:w-100 md:w-3/4">
+              <p class="ranked-para">
+                Any time you're making a decision with more than two choices,
+                ranked choice voting is the right tool for the job. It uncovers
+                your audience's preferences with greater accuracy and fidelity
+                than traditional voting methods.
+                <span class="underline text-blue-500"> Create a poll</span> to
+                see how.
+              </p>
+              <p class="ranked-p">KEY ADVANTAGES OF RANKED CHOICE VOTING</p>
+              <i class="fa-solid fa-check text-green-500"></i>
+              <a class="ranked-para" href=""
+                >Determines the choices with the strongest support</a
+              ><br />
+              <i class="fa-solid fa-check text-green-500"></i>
+              <a class="ranked-para" href=""
+                >Eliminates the need for multiple decision rounds</a
+              ><br />
+              <i class="fa-solid fa-check text-green-500"></i>
+              <a class="ranked-para" href="">Reduces vote gaming</a>
             </div>
-            <div class="ml-4"> <!-- Added ml-4 class for left margin -->
-                <a href="#" class="px-4 py-2 bg-black text-white rounded-lg text-xs font-semibold">GET STARTED</a> <!-- Removed unnecessary ml-4 class -->
-            </div>
+          </div>
+          <!-- Second Part -->
+          <div class="w-1/2">
+            <img
+              src="./RankedVote_ Online Ranked-Choice Voting Polls_files/6222880f64c1fb5616d6ea30_results-final-round.svg"
+              alt=""
+            />
+          </div>
         </div>
-        
+      </div>
+
+      <!-- poll section -->
+      <div
+        class="pool flex md:flex-row sm:flex-col justify-evenly items-center py-10 bg-purple-700 h-100"
+      >
+        <!-- Added justify-between and items-center classes -->
+        <div>
+          <p class="poll-p">GET STARTED IN MINUTES...</p>
+          <h1 class="poll-h1">Poll your voters now</h1>
+        </div>
+        <div class="ml-4">
+          <!-- Added ml-4 class for left margin -->
+          <a href="#" class="button text-white">GET STARTED</a>
+          <!-- Removed unnecessary ml-4 class -->
+        </div>
+      </div>
     </main>
-    <footer class="flex flex-col md:flex-row mt-2 items-center ">
+    <footer class="flex flex-col md:flex-row mt-2 items-center ml-auto mr-auto">
       <!-- First column (30% width) -->
       <div class="w-full md:w-3/10">
         <img
           class="w-64 mx-auto mb-5"
-          src="./5edaca1d81168bf10d8a6864_rankedvote_logo.svg"
+          src="./RankedVote_ Online Ranked-Choice Voting Polls_files/5edaca1d81168bf10d8a6864_rankedvote_logo.svg"
           alt=""
         />
-       <div class="text-center"> <p class="text-center text-gray-400">©2024 RankedVote, LLC. All rights reserved.</p>
-        <i class="fa-brands fa-square-twitter text-gray-400"></i>
-        <i class="fa-brands fa-linkedin text-gray-400 "></i>
-    </div>
+        <div class="text-center">
+          <p class="text-center text-gray-400">
+            ©2024 RankedVote, LLC. All rights reserved.
+          </p>
+          <i class="fa-brands fa-square-twitter text-gray-400"></i>
+          <i class="fa-brands fa-linkedin text-gray-400"></i>
+        </div>
       </div>
 
       <!-- Second column (70% width) -->
       <div class="w-full md:w-7/10 flex flex-wrap text-justify">
         <!-- Sections -->
-        <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4 ">
+        <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
           <h1 class="text-center font-semibold">App</h1>
           <p class="text-center">Features</p>
           <p class="text-center">Pricing</p>

@@ -1,11 +1,99 @@
 nav .relative:hover .hidden {
     display: block;
   }
+  .container-header{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .button {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background-color: #0A1F44;
+    font-size: 12px;
+    border-radius: 20px;
+    padding:10px 30px;
+    line-height: 20px;
+    /* Add any additional styling you need */
+  }
   /* Apply font family and weight to both paragraphs and headings */
 body {
     font-family: 'Cabin', sans-serif;
     font-style: normal;
+  
     
+}
+.hero {
+  background-image: url("./RankedVote_ Online Ranked-Choice Voting Polls_files/6282c89…_tilted-results-round3-bg.svg"), url("./RankedVote_ Online Ranked-Choice Voting Polls_files/5f8599c…_diagonal-lines-bg.svg");
+  background-position: 100% 5%, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: 775px, auto;
+  background-attachment: scroll, scroll;
+}
+.clients {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+}
+
+.clients img {
+  text-align: center;
+  order: 0;
+  align-self: center;
+  width: 20%;
+  padding: 25px;
+  display: inline-block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .clients{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .clients img {
+    width: 50%; /* Adjust the width for medium-sized screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .clients{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .clients img {
+    width: 100%; /* Adjust the width for small-sized screens */
+  }
+}
+.demos{
+  background-color: #F5F7FD;
+  height: 150px;
+  border: 1px  solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.demos-content{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFAF1;
+  padding: 30px 10px;
+  border: 1px solid orange;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
 }
 .slider-container {
     width: 100%;
@@ -36,8 +124,10 @@ body {
   }
   
 .vertical-line {
-    border-left: 1px solid #c32626; /* Or any other color */
-    height: 100px; /* Adjust the height as needed */
+  background-color: #d8dcee;
+  width: 1px;
+  min-height: 55px;
+  margin: 25px auto;
 }
 .ranked-para{
     font-family: 'Cabin', sans-serif;
