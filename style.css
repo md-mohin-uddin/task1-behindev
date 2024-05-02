@@ -1,4 +1,54 @@
 /*  */
+.cover{
+  background-image: url('./images/6282c893b9b3495c8d6dc73c_tilted-results-round3-bg.svg');
+  /* Specify additional background properties as needed */
+  background-size: cover; /* Cover the entire background */
+  background-position: 100% 5%, 0 0; /* Center the background image */
+  background-repeat: no-repeat,; /* Do not repeat the background image */
+  width: 100%;
+  height: 500px;
+    background-repeat: no-repeat, repeat;
+    background-size: 775px, auto;
+    background-attachment: scroll, scroll;
+}
+.cover-bg{
+  
+  background-color:#7540EE;
+  justify-content: center;
+  align-items: center;
+  min-height: 650px;
+  padding: 90px 5%;
+  display: flex;
+  position: relative;
+}
+.cover-block{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-height: 400px;
+  display: flex;
+}
+.cover-block h1{
+  color: #fff;
+  text-align: left;
+  align-self: flex-start;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  font-size: 50px;
+  line-height:56px;
+  font-weight: 700;
+}
+.cover-block p{
+color:#DDDDDD;
+text-align: left;
+margin-bottom: 10px;
+font-family: Cabin, sans-serif;
+font-size: 17px;
+line-height: 24px;
+font-weight: 400;
+}
   .container-header{
     width: 90%;
     margin: 0 auto;
@@ -64,7 +114,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+  .logo img {
+    max-width: 100px; /* Adjust logo size */
+  }
   .nav-links {
     margin-top: 20px;
   }
@@ -103,6 +155,7 @@ body {
   order: 0;
   align-self: center;
   width: 200px;
+  height: 120px;
   padding: 25px;
   display: inline-block;
 }
@@ -265,6 +318,11 @@ footer p{
 }
 /* Responsive styles */
 @media (max-width: 768px) {
+  .cover-container{
+    flex-direction: column;
+   position: static;
+    display: flex;
+  }
   .clients{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -326,6 +384,11 @@ footer p{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     margin-bottom: 20px;
+  }
+  .counter{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
   .pool{
     display: flex;
