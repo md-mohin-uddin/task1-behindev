@@ -8,7 +8,7 @@
   width: 100%;
   height: 500px;
     background-repeat: no-repeat, repeat;
-    background-size: 775px, auto;
+    background-size: auto, auto;
     background-attachment: scroll, scroll;
 }
 .cover-bg{
@@ -318,10 +318,15 @@ footer p{
 }
 /* Responsive styles */
 @media (max-width: 768px) {
-  .cover-container{
+  .cover{
     flex-direction: column;
    position: static;
-    display: flex;
+    display: block;
+  }
+  .cover-bg{
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
   }
   .clients{
     display: grid;
@@ -371,6 +376,9 @@ footer p{
   .clients{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+  }
+  .cover{
+    display: none;
   }
   .clients img {
     width: 50%; /* Adjust the width for small-sized screens */
